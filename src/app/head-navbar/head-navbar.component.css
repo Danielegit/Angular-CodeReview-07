@@ -1,0 +1,15 @@
+header{
+	
+	height: 6em;
+	
+
+
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d58121+3,d58121+4,d58121+4,d58121+11&1+0,0.66+100 */
+	background: -moz-linear-gradient(left,  rgba(213,129,33,1) 0%, rgba(213,129,33,0.99) 3%, rgba(213,129,33,0.99) 4%, rgba(213,129,33,0.97) 11%, rgba(213,129,33,0.66) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(213,129,33,1) 0%,rgba(213,129,33,0.99) 3%,rgba(213,129,33,0.99) 4%,rgba(213,129,33,0.97) 11%,rgba(213,129,33,0.66) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(213,129,33,1) 0%,rgba(213,129,33,0.99) 3%,rgba(213,129,33,0.99) 4%,rgba(213,129,33,0.97) 11%,rgba(213,129,33,0.66) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d58121', endColorstr='#a8d58121',GradientType=1 ); /* IE6-9 */
+
+}
+
+

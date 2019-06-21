@@ -1,0 +1,57 @@
+#container_list td{
+
+	width: 9em; 
+}
+
+button{
+	width: 5em;
+	border: 2px solid lightgray;
+}
+
+tr{
+	border-bottom: 1px solid gray;
+}
+
+#btn_container{
+	display: inline-block; 
+}
+
+#mytab{
+	width: 97%;
+}
+
+h2{
+	
+	font-style: italic;
+}
+
+
+
+@media screen and (max-width: 745px) {
+  .mytd {
+    position: relative;
+    right: -55px;
+  }
+
+}
+
+@media screen and (max-width: 530px) {
+   #btn_container{
+  	position: relative;
+	right: 29px; 
+}
+}
+
+
+.phone{
+	max-width: 25px;
+	position: relative;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none;
+
+}
+#phoneNumber{
+	display: inline-block; 
+}

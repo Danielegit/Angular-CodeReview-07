@@ -1,0 +1,33 @@
+<h2 class="mt-lg-0 mt-2">Contacts:</h2>
+
+<div class="d-flex justify-content-end">
+        
+         <form class="form-inline ">
+                <input name="searchInput" class="form-control m-2"  placeholder="Last Name" #searchInput="ngModel"  [(ngModel)]="searchText" style="width: 60%;">
+                <button class="btn bg-dark text-white "  (click)="searchText=''"> Reset </button>
+        </form> 
+        
+</div>
+
+
+
+    <table id="mytab" class="w-100">
+
+        <ng-container *ngFor="let people of peopleArray">
+                <tr *ngIf ="filterCondition(people)" id="container_list" >
+                        <td>{{people.firstName}}</td>
+                        <td>{{people.lastName}}</td>
+                       
+                        <td id="phoneNumber"><img class="phone" src="../../assets/img/phone.png">{{people.phoneNumber}}</td>
+                        <td></td> 
+                        <td class="" id="btn_container">
+                            <button class="btn btn-success  m-lg-0 m-md-0 m-1" (click)="peopleService.populateForm(people)">Edit</button>
+                            <button class="btn btn-danger m-lg-0 m-md-0 m-1" (click)="onDelete(people.$key)">Delete</button>
+                        </td>
+                </tr>
+        </ng-container>
+    </table>
+
+
+<div class="alert alert-danger" *ngIf="showDeletedMessage" >Deleted successfully</div>  
+
